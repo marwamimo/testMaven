@@ -28,10 +28,18 @@ public class OperationTest {
     }
 
     @Test
-    public void testSomeMethod() {
+    public void testSomeMethod1() {
         // TODO review the generated test code and remove the default call to fail.
         int a =0;
         int b=0;
+        int res = Operation.add(a, b);
+        assertEquals(res, a+b);
+    }
+    @Test
+    public void testSomeMethod2() {
+        // TODO review the generated test code and remove the default call to fail.
+        int a =5;
+        int b=2;
         int res = Operation.add(a, b);
         assertEquals(res, a+b);
     }
